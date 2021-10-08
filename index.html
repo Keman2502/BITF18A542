@@ -41,5 +41,37 @@
 		</ul>		
 	</div>
 
+	<div>
+		<h1>4- Create files</h1>
+		<ul>
+			<li>After cloning, a folder is created.</li>
+			<li> Inside that folder, create files and start working on your project.</li>
+		</ul>
+	</div>
+
+	<div>
+		<h1>5- Git PUSH</h1>
+		<p>To push you code into github follow this instruction.</p>
+		<li>Open terminal inside your folder.</li>
+		<h2>1- Initialize the git repository.</h2>
+		<p>Use git init to initialize the repository. It is used to create a new empty repository or directory consisting of files' with the hidden directory. '.git' is created at the top level of your project, which places all of the revision information in one place.</p>
+		<img src="images/init.png">
+		<h2>2- Check git status</h2>
+		<p>Use git status in your bash to view all the files which are going to be staged to the first commit.</p>
+		<img src="images/status.png">
+		<h2>3- Add the file to the new local repository.</h2>
+		<p>Use git add . in your bash to add all the files to the given folder.</p>
+		<img src="images/add.png">
+		<h2> Commit the files staged in your local repository by writing a commit message.</h2>
+		<p>You can create a commit message by git commit -m 'your message', which adds the change to the local repository.</p>
+		<img src="images/commit.png">
+		<h2>Add the URL copied, which is your remote repository to where your local content from your repository is pushed.</h2>
+		<p>git remote add origin 'your_url_name'</p>
+		<img src="images/remote.png">
+		<h2>Push the code in your local repository to GitHub</h2>
+		<img src="images/push.png">
+		<p>git push -u origin master is used for pushing local content to GitHub.</p>
+	</div>
+
 </body>
 </html>
