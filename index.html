@@ -1,30 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<title>Github Guide</title>
 </head>
 <body>
+	<nav class="navbar navbar-dark bg-dark">
+  		<div class="container-fluid">
+    		<a class="navbar-brand">Github Guide</a>
+  		</div>
+	</nav>
 
-	<h1>Github Guide</h1>
+	<div class="container">
+		<br>
+	<h2>What is Github?</h2>	
+	<p>GitHub is a web-based interface that uses Git, the open source version control software that lets multiple people make separate changes to web pages at the same time. GitHub allows multiple developers to work on a single project at the same time, reduces the risk of duplicative or conflicting work, and can help decrease production time. With GitHub, developers can build code, track changes, and innovate solutions to problems that might arise during the site development process simultaneously.</p>
+	<p>Learn how to Push Data in Github.</p>
 
-	<h1>Follow this Step: </h1>
+	<h1 class="follow">Follow this Step: </h1>
 
+	<br>
 	<div>
 		<h1>1- Create an account</h1>
-		<img style="width:50%" src="images/s1.png">
+		<img style="width:50%; margin-left: 25%" src="images/s1.png">
 		<p >Create an account on github.If you already have an account on github then sign in.</p>
-		<img src="images/s2.png">
+		<img style="margin-left: 25%" src="images/s2.png">
 	</div>
 
 	<div>
 		<h1>2- Create Repository</h1>
 		<p>Once you signed in, create a repository.</p>
-		<img src="images/s3.png">
+		<img style="margin-left: 30%" src="images/s3.png">
 		<p>On the new repository screen, you need to give this repository a special name to generate your website.</p>
 		<li>Fill up all the required details, i.e., repository name, description and also make the repository public this time as it is free.</li>
-		<img src="images/s4.png">
-		<p>After giving a unique name tp your repo you need to specify weather you want to creat a read me file or not and then click on button <strong>Create a repository</strong></p>
-		<img src="images/s5.png">
+		<br>
+		<img class="repo" src="images/s4.png">
+		<br>
+		<br>
+		<p>After giving a unique name tp your repo you need to specify weather you want to creat a read me file or not and then click on button <strong>Create a repository</strong></p><br>
+		<br>
+		<img class="createrepo" src="images/s5.png">
 	</div>
 
 	<div>
@@ -32,12 +48,14 @@
 		<p>git clone is a Git command line utility which is used to target an existing repository and create a clone, or copy of the target repository.</p>
 		<ul>
 			<li>When you create a repo, you will get a link of your reository</li>
-			<img src="images/s6.png">
+			<br>
+			<img style="width: 50%; margin-left: 20% " src="images/s6.png">
+			<br>
 			<li>Copy that url</li>
 			<li>Open you terminal.</li>
 			<li>Go to the location whereyou want to create a folder. for example cd Documents/Practice </li>
-			<li>write command '<strong>git clone 'paste copied url'</strong>'</li>
-			<img src="images/clone.png">
+			<li>write command '<strong>git clone 'paste copied url'</strong>'</li><br>
+			<img style="margin-left: 15%; width:60%" src="images/clone.png">
 		</ul>		
 	</div>
 
@@ -51,27 +69,32 @@
 
 	<div>
 		<h1>5- Git PUSH</h1>
-		<p>To push you code into github follow this instruction.</p>
+		<li>To push you code into github follow this instruction.</li>
 		<li>Open terminal inside your folder.</li>
+		<br>
 		<h2>1- Initialize the git repository.</h2>
-		<p>Use git init to initialize the repository. It is used to create a new empty repository or directory consisting of files' with the hidden directory. '.git' is created at the top level of your project, which places all of the revision information in one place.</p>
-		<img src="images/init.png">
+		<li>Use git init to initialize the repository. It is used to create a new empty repository or directory consisting of files' with the hidden directory. '.git' is created at the top level of your project, which places all of the revision information in one place.</li><br>
+		<img style="width: 60%; margin-left: 20%" src="images/init.png">
 		<h2>2- Check git status</h2>
-		<p>Use git status in your bash to view all the files which are going to be staged to the first commit.</p>
-		<img src="images/status.png">
+		<li>Use git status in your bash to view all the files which are going to be staged to the first commit.</li> <br>
+		<img style="width: 60%; margin-left: 20%" src="images/status.png">
 		<h2>3- Add the file to the new local repository.</h2>
-		<p>Use git add . in your bash to add all the files to the given folder.</p>
-		<img src="images/add.png">
-		<h2> Commit the files staged in your local repository by writing a commit message.</h2>
-		<p>You can create a commit message by git commit -m 'your message', which adds the change to the local repository.</p>
-		<img src="images/commit.png">
-		<h2>Add the URL copied, which is your remote repository to where your local content from your repository is pushed.</h2>
-		<p>git remote add origin 'your_url_name'</p>
-		<img src="images/remote.png">
-		<h2>Push the code in your local repository to GitHub</h2>
-		<img src="images/push.png">
-		<p>git push -u origin master is used for pushing local content to GitHub.</p>
+		<li>Use git add . in your bash to add all the files to the given folder.</li><br>
+		<img style="width: 60%;margin-left: 20%" src="images/add.png">
+		<h2>4- Commit the files staged in your local repository by writing a commit message.</h2>
+		<li>You can create a commit message by git commit -m 'your message', which adds the change to the local repository.</li><br>
+		<img style="width: 60%; margin-left: 20%" src="images/commit.png">
+		<h2>5- Add the URL copied, which is your remote repository to where your local content from your repository is pushed.</h2>
+		<li>git remote add origin 'your_url_name'</li><br>
+		<img  style="width: 60%; margin-left: 20%" src="images/remote.png">
+		<h2>6- Push the code in your local repository to GitHub</h2>
+		<img  style="width: 60%; margin-left: 20%" src="images/push.png">
+		<li>git push -u origin master is used for pushing local content to GitHub.</li>
+		<h2>7- View your files in your repository hosted on GitHub.</h2>
+		<img src="images/view.png">
+		<br>
+		<p><strong>Finished.</strong></p>
 	</div>
-
+</div>
 </body>
 </html>
